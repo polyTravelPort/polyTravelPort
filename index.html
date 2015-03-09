@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <!-- 1. Load platform.js for polyfill support. -->
+    <script src="bower_components/platform/platform.js"></script>
+   <!-- 2. Use an HTML Import to bring in the element. -->
+    <link rel="import" href="bower_components/core-ajax/core-ajax.html">
+     <link rel="import" href="bower_components/core-input/core-input.html">
+     <link rel="import" href="bower_components/paper-input/paper-input.html">
+     <style shim-shadow>
+        body {
+          font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+          margin: 0;
+          padding: 24px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          -webkit-tap-highlight-color: rgba(0,0,0,0);
+          -webkit-touch-callout: none;
+        }
+    
+        paper-input.narrow {
+          width: 150px;
+        }
+        
+        core-input {
+            width: 150px;
+            border:1px solid #AAA;
+            padding:3px;
+            margin:10px;
+        }
+    </style>
+
+  </head>
+  <body>
+    <!-- html code goes here -->
+    <!-- SCRIPTS go below your HTML -->
+    <h1>Core & Paper Elements</h1>
+    <ul>
+          <li><strong>Basic Text Input : Core </strong>
+            <core-input id="single" placeholder="Type something..."></core-input>
+          </li>
+          <li>
+          <strong>Basic Text Input : Paper</strong>
+          <paper-input label="Type Something" layout vertical></paper-input>
+        </li>
+    </ul>
+  </body>
+</html>
