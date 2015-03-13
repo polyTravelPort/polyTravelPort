@@ -1,0 +1,26 @@
+<link href="bower_components/paper-button/paper-button.html" rel="import">
+
+<polymer-element name="bookit-button" attributes="">
+  <template>
+    <style>
+		paper-button
+		{
+			background: green;
+			color: yellow;
+		}
+    </style>
+
+    <paper-button label="Book!" on-click="{{ saveButton }}" raised>Book!</paper-button>
+
+  </template>
+
+  <script>
+    Polymer('bookit-button', {
+      saveButton: function( e ) {
+        alert('button clicked');
+      }
+    });
+  </script>
+
+</polymer-element>
+
